@@ -10,14 +10,27 @@ Per i numeri che sono sia multipli di 3 che di 5 stampi FizzBuzz.
 
 // ! RACCOLTA DATI
 
-/* elenco variabili da inserire
+// elenco variabili da inserire
+const isValidNumber = (n) => Number.isInteger(n) && n > 0; // variabile per controllare se un numero è valido o meno
 
-/* inserire un numero compreso fra 1 a 100
+// inserire un numero compreso fra 1 a 100
+let inputNumber = parseInt(
+  prompt("Inserisci un numero intero compreso fra 1 e 100:")
+);
 
-/* controllo se il numero inserito è valido o meno
+console.log("Hai inserito:", inputNumber);
 
-// ! ELABORAZIONE DATI
+// controllo se il numero inserito è valido o meno
+if (!isValidNumber(inputNumber)) {
+  console.log(
+    "Valore inserito non valido, per favore inserisci un numero compreso fra 1 e 100"
+  );
+} else {
+  console.log("Valore inserito valido, procedo con l'esercizio");
 
-/* inserisco un loop da 1 a 100
+  // ! ELABORAZIONE DATI
 
-/* output finale
+  // inserisco un loop da 1 a 100
+
+  // output finale
+}
